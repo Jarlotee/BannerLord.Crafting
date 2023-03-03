@@ -1,0 +1,23 @@
+<Module>
+    <Name value="BannerLord.Crafting"/>
+    <Id value="BannerLord.Crafting"/>
+    <Version value="v1.1.0"/>
+    <SingleplayerModule value="true"/>
+    <MultiplayerModule value="false"/>
+    <DependedModules>
+        <DependedModule Id="SandBoxCore" DependentVersion="v1.1.0" Optional="false"/>
+        <DependedModule Id="Sandbox" DependentVersion="v1.1.0" Optional="false"/>
+    </DependedModules>
+    <SubModules>
+        <SubModule>
+            <Name value="BannerLord Crafting"/>
+            <DLLName value="BannerLord.Crafting.dll"/>
+            <SubModuleClassType value="BannerLord.Crafting.SubModule"/>
+            <Tags>
+                <Tag key="DedicatedServerType" value="none" />
+                <Tag key="IsNoRenderModeElement" value="false" />
+            </Tags>
+        </SubModule>
+    </SubModules>
+    <Xmls/>
+</Module>
