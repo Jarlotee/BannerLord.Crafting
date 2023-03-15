@@ -24,6 +24,8 @@ namespace BannerLord.Crafting
 
         private void HourlyTick()
         {
+            if (PartyBase.MainParty.LeaderHero is null) return;
+
             HandleStaminaRecoveryOutsideOfSettlement(PartyBase.MainParty.LeaderHero);
 
             foreach (var companion in PartyBase.MainParty.LeaderHero.CompanionsInParty)

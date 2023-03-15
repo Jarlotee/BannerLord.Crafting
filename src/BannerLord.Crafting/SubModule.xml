@@ -1,12 +1,12 @@
 <Module>
     <Name value="BannerLord.Crafting"/>
     <Id value="BannerLord.Crafting"/>
-    <Version value="v1.1.0"/>
+    <Version value="v1.1.1"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
     <DependedModules>
-        <DependedModule Id="SandBoxCore" DependentVersion="v1.1.0" Optional="false"/>
-        <DependedModule Id="Sandbox" DependentVersion="v1.1.0" Optional="false"/>
+        <DependedModule Id="SandBoxCore" DependentVersion="v1.1.1" Optional="false"/>
+        <DependedModule Id="Sandbox" DependentVersion="v1.1.1" Optional="false"/>
     </DependedModules>
     <SubModules>
         <SubModule>
