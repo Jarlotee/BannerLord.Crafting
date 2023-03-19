@@ -1,0 +1,11 @@
+{
+    "enableTravelingCraftingStaminaRecovery": true,
+    "enableCraftingResearchBehavior": true,
+    "enableImprovedCraftingXpMultipliers": true,
+    "travelingCraftingStaminaRecoveryMultiplier": 0.5,
+    "smeltingBaseUnlockChance": 0.2,
+    "craftingBaseUnlockChance": 0.05,
+    "refiningXpMultiplier": 0.1,
+    "smeltingXpMultiplier": 0.05,
+    "freeBuildCraftingXpMultiplier": 0.05
+}

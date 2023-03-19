@@ -6,12 +6,10 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace BannerLord.Crafting
+namespace BannerLord.Crafting.Behaviors
 {
-    public class OutOfSettlementSmithingRecoveryCampaignBehavior : CampaignBehaviorBase
+    public class TravelingCraftingStaminaRecoveryCampaignBehavior : CampaignBehaviorBase
     {
-        private const float OUT_OF_SETTLEMENT_SMITHING_RECOVERY_MULTIPLIER = 0.5f;
-
         public override void SyncData(IDataStore dataStore)
         {
             // no-op
@@ -43,7 +41,7 @@ namespace BannerLord.Crafting
 
             if (currentStamina < maxStamina && hero.CurrentSettlement == null)
             {
-                var recovery = (int)Math.Round(this.GetStaminaHourlyRecoveryRate(hero) * OUT_OF_SETTLEMENT_SMITHING_RECOVERY_MULTIPLIER);
+                var recovery = (int)Math.Round(this.GetStaminaHourlyRecoveryRate(hero) * Configuration.TravelingCraftingStaminaRecoveryMultiplier);
                 baseCraftingBehavior.SetHeroCraftingStamina(
                     hero,
                     MathF.Min(maxStamina, currentStamina + recovery)
