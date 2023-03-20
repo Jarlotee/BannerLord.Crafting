@@ -24,11 +24,9 @@ namespace BannerLord.Crafting.Behaviors
         {
             if (PartyBase.MainParty.LeaderHero is null) return;
 
-            HandleStaminaRecoveryOutsideOfSettlement(PartyBase.MainParty.LeaderHero);
-
-            foreach (var companion in PartyBase.MainParty.LeaderHero.CompanionsInParty)
+            foreach(var hero in PartyBase.MainParty.LeaderHero.Clan.Heroes)
             {
-                HandleStaminaRecoveryOutsideOfSettlement(companion);
+                HandleStaminaRecoveryOutsideOfSettlement(hero);
             }
         }
 
